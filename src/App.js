@@ -1,12 +1,14 @@
 import "./App.css";
 import Test from "./Test";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>hello this is Julie </h1>
+        <h1> Weather Search function </h1>
         <Test />
+        <Footer />
       </header>
     </div>
   );
