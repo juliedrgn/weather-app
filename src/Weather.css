@@ -1,0 +1,78 @@
+body {
+  font-family: "PT sans";
+}
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.container {
+  margin: 20px auto;
+  background-color: rgb(188, 226, 226);
+  max-width: 700px;
+  border: solid;
+  border-style: none;
+  border-radius: 10px;
+  padding: 50px;
+}
+.search-bar {
+  padding-bottom: 50px;
+}
+.weather-icon {
+  padding-left: 0px;
+  height: 64px;
+  width: 64px;
+}
+.fa-cloud {
+  padding: 10px;
+  font-size: 120px;
+}
+.overview {
+  text-align: center;
+}
+.button-current-location {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -60px;
+  right: -70px;
+}
+.weather-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  opacity: 50%;
+}
+.forecast-temps .max-temp {
+  font-weight: bold;
+  text-align: center;
+}
+.forecast-temps .min-temp {
+  opacity: 50%;
+  text-align: center;
+}
+.hosted-link {
+  text-align: center;
+  opacity: 50%;
+}

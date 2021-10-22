@@ -1,13 +1,12 @@
 import "./App.css";
-import Test from "./Test";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Weather Search function </h1>
-        <Test />
+        <Weather />
         <Footer />
       </header>
     </div>
