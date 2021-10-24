@@ -79,6 +79,7 @@ export default function Test() {
               <li>Humidity: {weatherData.humidity} %</li>
               <li>Wind: {weatherData.wind} km/h</li>
               <li>
+                {" "}
                 Last updated at <FormattedDate date={weatherData.date} />{" "}
               </li>
             </ul>
