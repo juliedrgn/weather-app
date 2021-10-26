@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 import axios from "axios";
 
-export default function Test() {
-  const [ready, setReady] = useState({ ready: false });
-  const [weatherData, setweatherData] = useState({});
+export default function Test(props) {
+  const [weatherData, setweatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
     setweatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -19,12 +18,10 @@ export default function Test() {
       wind: response.data.wind.speed,
       city: response.data.name,
     });
-    setReady(true);
   }
   if (weatherData.ready) {
     return (
       <div className="container">
-        <h1> weather </h1>
         <form>
           <div className="row">
             <div className="col-6">
@@ -55,38 +52,7 @@ export default function Test() {
             </div>
           </div>
         </form>
-        <div className="row">
-          <div className="col-6 d-flex justify-content-center">
-            <div className="float-left">
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                id="icon"
-                className="float-left"
-                alt="Cloudy"
-                width="150"
-              />
-            </div>
-          </div>
-          <div class="col-6">
-            <div>
-              <span className="temperature">
-                {Math.round(weatherData.temperature)} °C{" "}
-              </span>
-            </div>
-            <ul className="weather-info">
-              <li> {weatherData.city} </li>
-              <li> {weatherData.description}</li>N
-              <li>Humidity: {weatherData.humidity} %</li>
-              <li>Wind: {weatherData.wind} km/h</li>
-              <li>
-                {" "}
-                Last updated at <FormattedDate date={weatherData.date} />{" "}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <div className="weather-forecast" id="forecast"></div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
