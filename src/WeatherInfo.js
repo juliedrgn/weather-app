@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
         <div className="col-6 d-flex justify-content-center">
           <div className="float-left">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src={props.data.iconUrl}
               id="icon"
               className="float-left"
               alt="Cloudy"
