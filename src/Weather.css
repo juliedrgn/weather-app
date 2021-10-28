@@ -62,7 +62,7 @@ h2 {
   padding: 0;
   font-size: 14px;
   text-transform: capitalize;
-  opacity: 50%;
+  opacity: 0.5;
 }
 .forecast-temps .max-temp {
   font-weight: bold;
