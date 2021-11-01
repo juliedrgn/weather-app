@@ -45,11 +45,11 @@ h2 {
 }
 .weather-info {
   list-style: none;
-  margin: 0;
+  margin: 5;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: capitalize;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .WeatherForecast-temperature-max {
   font-weight: bold;
