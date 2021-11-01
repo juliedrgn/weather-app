@@ -37,19 +37,6 @@ h2 {
 .overview {
   text-align: center;
 }
-.button-current-location {
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 .units {
   position: relative;
   font-size: 16px;
@@ -64,11 +51,17 @@ h2 {
   text-transform: capitalize;
   opacity: 0.5;
 }
-.forecast-temps .max-temp {
+.WeatherForecast-temperature-max {
   font-weight: bold;
   text-align: center;
+  font-size: 22px;
 }
-.forecast-temps .min-temp {
-  opacity: 50%;
+.WeatherForecast-temperature-min {
+  opacity: 0.5;
+  text-align: center;
+  font-size: 22px;
+}
+.WeatherForecast-day {
+  font-size: 20px;
   text-align: center;
 }
