@@ -24,7 +24,6 @@ export default function WeatherInfo(props) {
             </span>
           </div>
           <ul className="weather-info">
-            <li> {props.data.city} </li>
             <li> {props.data.description}</li>
             <li>Humidity: {props.data.humidity} %</li>
             <li>Wind: {props.data.wind} km/h</li>
