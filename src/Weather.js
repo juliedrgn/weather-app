@@ -47,22 +47,13 @@ export default function Test(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-6">
               <input
                 type="submit"
                 value="Search"
                 className="form-control"
                 id="search-city"
               />
-            </div>
-            <div className="col-3">
-              <button
-                type="button"
-                className="button-current-location"
-                id="button-current-location"
-              >
-                My location
-              </button>
             </div>
           </div>
         </form>
