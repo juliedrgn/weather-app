@@ -32,7 +32,6 @@ export default function WeatherForecast(props) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} />
-                  <img src={props.iconUrl} alt="weather" />
                 </div>
               );
             } else {

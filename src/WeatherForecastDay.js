@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 
 export default function WeatherForecastDay(props) {
+  const icon = `https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
   function maxTemperature() {
     let temperature = Math.round(props.data.temp.max);
     return `${temperature}°`;
@@ -32,6 +33,7 @@ export default function WeatherForecastDay(props) {
         <span className="WeatherForecast-temperature-min">
           {minTemperature()}
         </span>
+        <img className="icon" src={icon} alt="" />
       </div>
     </div>
   );
